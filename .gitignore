@@ -1,0 +1,10 @@
+.ipynb_checkpoints
+old/
+__pycache__/
+.DS_Store
+.ipynb_checkpoints/
+data/00_raw_fmri/
+data/01_raw_video/
+Notes.txt
+scripts/old
+scripts/.ipynb_checkpoints/
