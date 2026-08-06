@@ -1,0 +1,16 @@
+Spatial ISC stability (H5 pipeline, 1000 cortical parcels) — CORROBORATION
+========================================================================
+All episodes: N=280, 39060 pairs, mean r = 0.867 +/- 0.030
+
+Per-season stability:
+  s01: N= 48, mean r = 0.878 +/- 0.016
+  s02: N= 48, mean r = 0.876 +/- 0.018
+  s03: N= 50, mean r = 0.866 +/- 0.019
+  s04: N= 44, mean r = 0.875 +/- 0.018
+  s05: N= 46, mean r = 0.865 +/- 0.031
+  s06: N= 44, mean r = 0.861 +/- 0.052
+
+Primary fMRIPrep comparison: 0.659 +/- 0.084 (see plot_stability.py).
+Magnitudes differ by pipeline (H5 regresses fewer confounds); the
+finding — a stable shared spatial pattern across the six-season run —
+holds under both.

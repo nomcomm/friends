@@ -1,0 +1,12 @@
+Spatial ISC stability (fMRIPrep, 1000 cortical parcels)
+========================================================
+All episodes: N=290, 41905 pairs, mean r = 0.659 ± 0.084
+4-subject-only:  N=272, mean r = 0.671 ± 0.069
+
+Per-season stability:
+  s01: N= 46, mean r = 0.703 ± 0.058
+  s02: N= 48, mean r = 0.708 ± 0.060
+  s03: N= 50, mean r = 0.654 ± 0.058
+  s04: N= 48, mean r = 0.619 ± 0.091
+  s05: N= 48, mean r = 0.657 ± 0.061
+  s06: N= 50, mean r = 0.654 ± 0.124

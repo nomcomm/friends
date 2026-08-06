@@ -1,0 +1,32 @@
+EXPLORATORY: rTPJ ISC by humor type (R2.3b) — Clf-C, fMRIPrep, UNCORRECTED
+Buildup window 20 TRs, HRF shift 3, min 8 TRs/ISC
+Coverage (PRIMARY, buildup-labeled events):
+  Language :   4679 events,   7603 TRs
+  Logic    :  10587 events,  16774 TRs
+  Identity :   1413 events,   2230 TRs
+
+============================================================
+PRIMARY (buildup-labeled laughter)
+============================================================
+[rTPJ]  means: Language=0.1781(n=269), Logic=0.1963(n=278), Identity=0.2126(n=122)
+       one-way ANOVA F=2.11 p=0.1216
+       Identity vs (Language+Logic): t=+1.57 p=0.1158
+[visual_cortex]  means: Language=0.3795(n=269), Logic=0.3779(n=278), Identity=0.3731(n=122)
+       one-way ANOVA F=0.07 p=0.9353
+       Identity vs (Language+Logic): t=-0.35 p=0.7279
+[auditory_cortex]  means: Language=0.2404(n=269), Logic=0.2260(n=278), Identity=0.2138(n=122)
+       one-way ANOVA F=1.61 p=0.2016
+       Identity vs (Language+Logic): t=-1.35 p=0.1783
+
+============================================================
+SECONDARY (content-labeled humor TRs)
+============================================================
+[rTPJ]  means: Language=0.1544(n=278), Logic=0.1546(n=278), Identity=0.1394(n=239)
+       one-way ANOVA F=1.11 p=0.3297
+       Identity vs (Language+Logic): t=-1.49 p=0.1362
+[visual_cortex]  means: Language=0.3817(n=278), Logic=0.3866(n=278), Identity=0.3435(n=239)
+       one-way ANOVA F=7.64 p=0.0005
+       Identity vs (Language+Logic): t=-3.89 p=0.0001
+[auditory_cortex]  means: Language=0.1900(n=278), Logic=0.1838(n=278), Identity=0.1778(n=239)
+       one-way ANOVA F=0.66 p=0.5196
+       Identity vs (Language+Logic): t=-0.97 p=0.3316

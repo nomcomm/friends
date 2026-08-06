@@ -1,0 +1,18 @@
+Per-viewer laughter GLM (within-subject, Block B, R1.1)
+============================================================
+N viewers = 4  |  episodes with GLM = 278
+Inter-viewer spatial agreement (cortical beta maps): mean pairwise r = 0.614 +/- 0.046  (range 0.526-0.666)
+
+viewer   ROI                  beta       t          p  n_ep
+sub-01   rTPJ                0.154    6.61   1.98e-10   273
+sub-01   visual_cortex       0.400   16.57   4.07e-43   273
+sub-01   auditory_cortex    -0.267  -11.24   2.53e-24   273
+sub-02   rTPJ                0.230   10.89   3.62e-23   274
+sub-02   visual_cortex       0.508   22.47   5.20e-64   274
+sub-02   auditory_cortex    -0.619  -27.08   2.57e-79   274
+sub-03   rTPJ                0.630   26.19   1.93e-76   274
+sub-03   visual_cortex       0.540   20.97   7.83e-59   274
+sub-03   auditory_cortex    -0.872  -28.41   1.60e-83   274
+sub-05   rTPJ                0.112    5.37   1.68e-07   277
+sub-05   visual_cortex       0.484   19.39   1.91e-53   277
+sub-05   auditory_cortex     0.124    5.94   8.47e-09   277

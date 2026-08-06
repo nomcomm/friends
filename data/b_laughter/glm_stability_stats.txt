@@ -1,0 +1,6 @@
+GLM laughter-contrast spatial stability (β maps, 1000 cortical parcels)
+============================================================
+Across episodes: N=278, mean pairwise spatial r = 0.548 ± 0.228
+Across the 6 season-averaged maps: mean pairwise r = 0.966 ± 0.013
+
+Per-season N episodes: s01=46, s02=48, s03=50, s04=44, s05=46, s06=44

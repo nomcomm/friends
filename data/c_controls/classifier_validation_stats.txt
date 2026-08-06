@@ -1,0 +1,18 @@
+Laughter-classifier agreement with HUMAN labels (Cohen's kappa) — R2.1c
+======================================================================
+classifier                         s01e01a           s04e09a
+Original MFCC-RF           κ=0.618 (train)κ=0.618 (held-out)
+Clf-A (s1)                 κ=1.000 (train)κ=0.556 (held-out)
+Clf-B (s4)              κ=0.622 (held-out)   κ=0.995 (train)
+Clf-C (both) — PRIMARY     κ=1.000 (train)   κ=0.995 (train)
+
+Honest generalization (held-out episode only):
+  Original MFCC-RF         held-out κ = 0.618
+  Clf-A (s1)               held-out κ = 0.556
+  Clf-B (s4)               held-out κ = 0.622
+  Clf-C (both) — PRIMARY   (trained on both — no held-out here; ~clfA/clfB held-out)
+
+Interpretation: κ≈0.6 = 'substantial agreement' (Landis & Koch). The primary
+Clf-C is trained on both episodes; its generalization is bracketed by the clfA/clfB
+held-out values. Errors concentrate at laugh-block boundaries (structurally
+unavoidable, inconsequential for interval-based ISC/GLM contrasts).

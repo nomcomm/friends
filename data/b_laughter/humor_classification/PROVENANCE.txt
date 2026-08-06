@@ -1,0 +1,18 @@
+PROVENANCE — humor_classification/  (LLM humor content, Juckel 2016 typology)
+=============================================================================
+Status : CARRIED OVER (verbatim). Copied 2026-07-24.
+From   : 03_REVISION/data/04_humor_classification/
+Built by: 04_humor_classification.py — Gemini 2.0 Flash classified transcript
+          utterances against the Juckel et al. (2016) verbal-humor typology
+          (Language / Logic / Identity; Action deferred). NOT re-run here (LLM
+          API cost); v2 humor_classification.py reads these outputs.
+
+Key files:
+  aggregate_humor_by_tr.csv   137,681 TRs × 292 episodes (is_humor, primary_category,
+                              techniques, text, laughter_label[=original annotation])
+  aggregate_stats.txt         chi-square (humor vs laughter), per-category
+  per_episode/                per-episode utterance / TR / overlap CSVs
+
+Note: laughter_label in the aggregate is the ORIGINAL annotation. v2
+humor_classification.py recomputes the humor-vs-laughter comparison against the
+PRIMARY Clf-C annotations (data/0_prep/laughter_annotations/) for consistency.

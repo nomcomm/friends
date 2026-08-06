@@ -1,0 +1,15 @@
+============================================================
+Aggregate humor/laughter overlap — 292 episodes
+============================================================
+Total TRs    : 137,681
+Humor TRs    : 91,194 (66.2%)
+Laughter TRs : 36,393 (26.4%)
+Both         : 17,768 (12.9%)
+
+Overall chi2(1) = 6706.098, p = 0.00e+00
+=> Humor label significantly predicts laughter.
+
+Per-category vs. no-humor baseline:
+  Language   (n=26,382 TRs, 20.9% laughter): chi2(2)=2783.668, p=0.00e+00 *
+  Logic      (n=56,543 TRs, 19.0% laughter): chi2(2)=5570.933, p=0.00e+00 *
+  Identity   (n=8,219 TRs, 18.3% laughter): chi2(2)=1422.613, p=1.21e-309 *

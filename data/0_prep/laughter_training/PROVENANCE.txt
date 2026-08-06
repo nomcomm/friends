@@ -1,0 +1,48 @@
+PROVENANCE — laughter classifier (PRIMARY = Clf-C) + training material
+======================================================================
+
+Status : CARRIED OVER (copied verbatim), checksum-verified. Copied 2026-07-22.
+
+PRIMARY MODEL
+  ../laughter_classifier.pkl   <-  03_REVISION/data/08_retrained_mfcc/clf_C_both.pkl
+    RandomForestClassifier, 300 trees, class_weight=balanced, random_state=42,
+    86 features. Trained on HUMAN annotations of TWO episodes:
+      s01e01a_manual.csv (315 TRs, 34.9% laughter)
+      s04e09a_manual.csv (441 TRs, 32.7% laughter)
+    This is the improved classifier from the revision (reviewer R2.1c) and is
+    the classifier whose predictions feed the laughter-ISC analysis.
+
+COMPARISON MODELS (used by c_controls/classifier_validation.py, not the main path)
+  clf_A_s01e01a.pkl  <- 08_retrained_mfcc/clf_A_s01e01a.pkl   (human labels, s1 only)
+  clf_B_s04e09a.pkl  <- 08_retrained_mfcc/clf_B_s04e09a.pkl   (human labels, s4 only)
+  The ORIGINAL 32-feature Gemini-trained model stays in the read-only original
+  package (01_ORIGINAL_GITHUB/.../laughter_classifier_ model.pkl); it is the
+  baseline the improved classifier is compared against (agreement r=0.961 on ISC).
+
+HUMAN GROUND TRUTH
+  s01e01a_manual.csv, s04e09a_manual.csv
+    <- 03_REVISION/data/07_laughter_annotation_gemini/manual/
+    columns: tr_index, onset_ms, time, offset_ms, ls
+
+PROVENANCE GAP (documented honestly)
+  The script that ORIGINALLY trained clf_A/B/C is NOT in 03_REVISION/scripts/
+  (only loaders 08c/09a/11 and different dumpers 02/08b exist) — it was an
+  interactive step that was not saved. The v2 train_laughter_classifier.py is a
+  RECONSTRUCTED trainer: exact hyperparameters recovered from the pickled model
+  (get_params) + the 86-feature extractor preserved verbatim in 08c/09a + the two
+  manual CSVs above.
+
+  The reconstruction DOCUMENTS the training procedure but does NOT regenerate the
+  model. Measured 2026-08-02 (`--verify`): retraining agrees with clf_C_both.pkl on
+  only 94.44% of the training TRs, despite identical hyperparameters, random_state
+  and feature extractor — the original was fitted under a different library build.
+  clf_C_both.pkl is therefore AUTHORITATIVE: it produced all 280 carried annotations
+  and every number in the paper. train_laughter_classifier.py will NOT overwrite it
+  (--force writes a side file and reports the agreement instead).
+
+  The INFERENCE path is exact: running the carried model through predict_laughter.py
+  reproduces the annotations bit-identically (verified on 6 episodes across 4 seasons,
+  100% label match).
+
+Feature extractor : scripts/0_prep/laughter_features.py  (86-dim, shared by
+                    train_laughter_classifier.py and predict_laughter.py).

@@ -1,0 +1,20 @@
+Humor content vs laughter — 'harvesting' argument (Clf-C laughter)
+==============================================================
+Episodes with both humor + Clf-C laughter: 280
+Total TRs (all TRs of the matched segments) : 132,131
+Humor-positive (LLM)     : 66.2%
+Laughter (Clf-C)         : 21.4%
+Both (same TR)           : 8.9%
+
+=> Humor is near-continuous (66%); laughter marks periodic peaks (21%).
+   The laugh track 'harvests' only a fraction of the humor content.
+
+Humor composition (share of humor TRs by primary category):
+  Language   29.3%  (25,618 TRs)
+  Logic      61.6%  (53,913 TRs)
+  Identity    9.0%  (7,896 TRs)
+
+CAVEAT — do NOT read same-TR humor↔laughter as suppression: the laugh
+track fills the pauses AFTER jokes, so concurrent (same-TR) laughter is
+lower during dialogue/humor TRs. The temporal humor→laughter relationship
+is captured by the HRF-shifted fMRI analyses, not this content comparison.

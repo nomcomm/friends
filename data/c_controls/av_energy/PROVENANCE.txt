@@ -1,0 +1,10 @@
+PROVENANCE — av_energy/ (per-TR stimulus energy, carried over)
+==============================================================
+Status: CARRIED OVER from 03_REVISION/data/15_av_energy_control/ (2026-07-24).
+  acoustic_rms/{ep}_rms.csv   per-TR acoustic RMS (dB), native-SR mp3   [cols: tr, rms_db]
+  visual_energy/{ep}_vis.csv  per-TR visual motion energy (frame-to-frame luminance
+                              change, ffmpeg-decoded, downscaled)        [cols: tr, vis_energy]
+Computed by 15_av_energy_control.py. Video decoding (the expensive step) is DONE and
+cached here — av_energy.py reuses these and does NOT re-decode video.
+The energy-matched ISC contrast is recomputed by av_energy.py with the PRIMARY Clf-C
+laughter annotations + fMRIPrep timeseries.

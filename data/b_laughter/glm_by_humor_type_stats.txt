@@ -1,0 +1,16 @@
+EXPLORATORY: laughter GLM β by humor type (R2.3b) — Clf-C, fMRIPrep, UNCORRECTED
+Buildup window 20 TRs, min 4 laughter TRs/category/episode
+Coverage (episodes contributing each category): Language=277, Logic=278, Identity=194
+
+[rTPJ]  means: Language=+0.2231(n=277), Logic=+0.2847(n=278), Identity=+0.3294(n=194)
+       one-way ANOVA F=2.92 p=0.0543
+       Identity vs (Language+Logic): t=+1.88 p=0.0599
+[visual_cortex]  means: Language=+0.4355(n=277), Logic=+0.4714(n=278), Identity=+0.3269(n=194)
+       one-way ANOVA F=3.29 p=0.0378
+       Identity vs (Language+Logic): t=-2.47 p=0.0137
+[auditory_cortex]  means: Language=-0.4358(n=277), Logic=-0.4264(n=278), Identity=-0.5078(n=194)
+       one-way ANOVA F=1.64 p=0.1941
+       Identity vs (Language+Logic): t=-1.80 p=0.0721
+[dorsal_striatum]  means: Language=+0.1573(n=277), Logic=+0.2167(n=278), Identity=+0.1817(n=194)
+       one-way ANOVA F=2.81 p=0.0606
+       Identity vs (Language+Logic): t=-0.22 p=0.8288
